@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "FinnhubSwift",
+        "repositoryURL": "https://github.com/kurtmcintire/FinnhubSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "d0dd81bfd9fc56541d5c6e24be503e87fba0a52a",
+          "version": "1.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
