@@ -60,7 +60,7 @@ class MarketViewController: UIViewController, UIPickerViewDelegate, UIPickerView
 //        let pickerView = UIDatePicker(frame: CGRect(x: 0, y: 0, width: 250, height: 300))
      }
     
-    @objc func buttonTapped(){
+    @objc func buttonTapped() {
         let vc = UIViewController()
         vc.preferredContentSize = CGSize(width: 250,height: 300)
 
@@ -69,7 +69,7 @@ class MarketViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         pickerView.delegate = self
         pickerView.dataSource = self
 
-        let itemAlert = UIAlertController(title: "Create Meditation", message: "", preferredStyle: UIAlertController.Style.alert)
+        let itemAlert = UIAlertController(title: "Market Selection", message: "", preferredStyle: UIAlertController.Style.alert)
         itemAlert.setValue(vc, forKey: "contentViewController")
         itemAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         itemAlert.addAction(UIAlertAction(title: "Send", style: .default, handler: nil))

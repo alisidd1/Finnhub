@@ -34,68 +34,6 @@
             endingLineNumber = "93"
             landmarkName = "buttonTapped()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D0F8B1DD-0AE8-4CBF-A124-1825AB541D18 - d29ab45dfaf3992d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "FinnHub.MarketViewController.numberOfComponents(in: __C.UIPickerView) -&gt; Swift.Int"
-                  moduleName = "FinnHub"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alisiddiqui/Desktop/projects/FinnHub/FinnHub/ViewControllers/MarketViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "87"
-                  endingLineNumber = "87"
-                  offsetFromSymbolStart = "28">
-               </Location>
-               <Location
-                  uuid = "D0F8B1DD-0AE8-4CBF-A124-1825AB541D18 - da80a599e0a5d1b4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "FinnHub.MarketViewController.buttonTapped() -&gt; ()"
-                  moduleName = "FinnHub"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alisiddiqui/Desktop/projects/FinnHub/FinnHub/ViewControllers/MarketViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "87"
-                  endingLineNumber = "87"
-                  offsetFromSymbolStart = "1244">
-               </Location>
-               <Location
-                  uuid = "D0F8B1DD-0AE8-4CBF-A124-1825AB541D18 - da80a599e0a5d17a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "FinnHub.MarketViewController.buttonTapped() -&gt; ()"
-                  moduleName = "FinnHub"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alisiddiqui/Desktop/projects/FinnHub/FinnHub/ViewControllers/MarketViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "93"
-                  endingLineNumber = "93"
-                  offsetFromSymbolStart = "1624">
-               </Location>
-               <Location
-                  uuid = "D0F8B1DD-0AE8-4CBF-A124-1825AB541D18 - da80a599e0a5d6bc"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "FinnHub.MarketViewController.buttonTapped() -&gt; ()"
-                  moduleName = "FinnHub"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alisiddiqui/Desktop/projects/FinnHub/FinnHub/ViewControllers/MarketViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "95"
-                  endingLineNumber = "95"
-                  offsetFromSymbolStart = "1032">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
