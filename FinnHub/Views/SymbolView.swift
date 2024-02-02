@@ -8,7 +8,7 @@
 import UIKit
 
 class SymbolView:UIView, UITableViewDelegate, UITableViewDataSource {
-    
+      
     var symbolData = StockAPIResponse(close: 0.0,
                                       dailyGain: 0.0,
                                       dailyPercent: 0.0,
@@ -17,6 +17,7 @@ class SymbolView:UIView, UITableViewDelegate, UITableViewDataSource {
                                       open: 0.0,
                                       pervClose: 0.0,
                                       totalVolume: 0.0)
+    
     
     override init(frame: CGRect)
     {
@@ -36,7 +37,7 @@ class SymbolView:UIView, UITableViewDelegate, UITableViewDataSource {
         fatalError("init(coder:) has not been implemented")
     }
     
-    let headerImageView: UIImageView = {
+     let headerImageView: UIImageView = {
         let headerImageView = UIImageView()
         headerImageView.translatesAutoresizingMaskIntoConstraints = false
         headerImageView.backgroundColor = .systemPink
@@ -112,10 +113,11 @@ class SymbolView:UIView, UITableViewDelegate, UITableViewDataSource {
             stockSymbolLabel.rightAnchor.constraint(equalTo: safeAreaLayoutGuide.rightAnchor, constant: -250),
             stockSymbolLabel.heightAnchor.constraint(equalTo: safeAreaLayoutGuide.heightAnchor, multiplier: 0.05),
 
+
             stockTable.topAnchor.constraint(equalTo: stockSymbolLabel.bottomAnchor, constant: 50),
             stockTable.leftAnchor.constraint(equalTo: safeAreaLayoutGuide.leftAnchor, constant: 50),
             stockTable.rightAnchor.constraint(equalTo: safeAreaLayoutGuide.rightAnchor, constant: -50),
-            stockTable.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -100),
+            stockTable.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -50),
         ])
     }
     
@@ -138,6 +140,11 @@ class SymbolView:UIView, UITableViewDelegate, UITableViewDataSource {
     }
     
     @objc func symbolHander() {
+        if stockSymbolLabel.text?.isEmpty == true && symbolData.close != 0.0 {
+            symbolData.close = 0.0
+            stockTable.reloadData()
+            return
+        }
         stockSymbolLabel.text = stockSymbolTextFiled.text?.uppercased()
         NetworkManager.shared.getStockQuote(symbol: stockSymbolTextFiled.text!) { [weak self] result in
             switch result {
@@ -156,12 +163,12 @@ class SymbolView:UIView, UITableViewDelegate, UITableViewDataSource {
     
     func viewWillAppear(_ animated: Bool) {
         if symbolData.close == 0 {
-               self.stockTable.isHidden = true
+            self.stockTable.isHidden = true
             stockTable.reloadData()
-           }
-           else {
-               self.stockTable.isHidden = false
-               stockTable.reloadData()
-     }
-       }
+        }
+        else {
+            self.stockTable.isHidden = false
+            stockTable.reloadData()
+        }
+    }
 }

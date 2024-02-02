@@ -8,22 +8,22 @@
 import UIKit
 
 class SymbolDetailsViewController: UIViewController {
+    private let _view = SymbolView()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    override func loadView() {
+        super.loadView()
+        view = _view
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .systemBackground
+        title = "Details Data"
 
-    /*
-    // MARK: - Navigation
+ //       let customTabBarItem:UITabBarItem = UITabBarItem(title: "Streaming Data", image: nil, selectedImage: nil)
+//        self.tabBarItem = customTabBarItem
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
+
 
 }

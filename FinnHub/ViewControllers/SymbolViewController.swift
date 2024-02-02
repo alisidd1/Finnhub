@@ -8,9 +8,9 @@
 import UIKit
 
 class SymbolViewController: UIViewController {
-
-    private let _view = SymbolView()
     
+    private let _view = SymbolView()
+
     override func loadView() {
         super.loadView()
         view = _view
@@ -21,20 +21,11 @@ class SymbolViewController: UIViewController {
         view.backgroundColor = .systemBackground
         title = "Stock Data"
         
-//        NetworkManager.shared.getStockQuote(symbol: "AAPL") { [weak self] result in
-//            switch result {
-//            case .failure(let error):
-//                print("Error: \(error)")
-//                return
-//            case .success(let data):
-//                print(data)
-//                self?._view.symbolData = data
-//                DispatchQueue.main.async {
-//                    self?._view.stockTable.reloadData()
-//                }
-//            }
-//            
-//        }
+        var customTabBarItem:UITabBarItem = UITabBarItem(title: "Quote", image: nil, selectedImage: nil)
+        self.tabBarItem = customTabBarItem
         
     }
+    
+
 }
+

@@ -17,12 +17,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window.rootViewController = createTabBar()
         window.makeKeyAndVisible()
         self.window = window
-        
     }
     
     func createTabBar() -> UINavigationController{
         let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [SymbolViewController(), StreamingViewController()]
+        tabBarController.viewControllers = [SymbolViewController(), StreamingViewController(), MarketViewController(), SymbolDetailsViewController()]
         let navController = UINavigationController(rootViewController: tabBarController)
         return navController
     }

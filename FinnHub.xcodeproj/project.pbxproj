@@ -30,6 +30,9 @@
 		FCA8E9F82B69955B00043B61 /* SymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA8E9F72B69955B00043B61 /* SymbolView.swift */; };
 		FCA8E9FA2B6995B500043B61 /* SymbolViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA8E9F92B6995B500043B61 /* SymbolViewCell.swift */; };
 		FCBC060E2B6C07EC0056E327 /* StreamingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBC060D2B6C07EC0056E327 /* StreamingViewController.swift */; };
+		FCBC06102B6C36220056E327 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBC060F2B6C36220056E327 /* PickerView.swift */; };
+		FCBC06122B6C5DB00056E327 /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBC06112B6C5DB00056E327 /* MarketViewController.swift */; };
+		FCBC06142B6C5E020056E327 /* MarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBC06132B6C5E020056E327 /* MarketView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +61,9 @@
 		FCA8E9F72B69955B00043B61 /* SymbolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolView.swift; sourceTree = "<group>"; };
 		FCA8E9F92B6995B500043B61 /* SymbolViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolViewCell.swift; sourceTree = "<group>"; };
 		FCBC060D2B6C07EC0056E327 /* StreamingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingViewController.swift; sourceTree = "<group>"; };
+		FCBC060F2B6C36220056E327 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		FCBC06112B6C5DB00056E327 /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
+		FCBC06132B6C5E020056E327 /* MarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,7 @@
 				FCA8E9CE2B685AE600043B61 /* SymbolViewController.swift */,
 				FCA8E9D02B685AFE00043B61 /* SymbolDetailsViewController.swift */,
 				FCBC060D2B6C07EC0056E327 /* StreamingViewController.swift */,
+				FCBC06112B6C5DB00056E327 /* MarketViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -129,6 +136,8 @@
 			children = (
 				FCA8E9F72B69955B00043B61 /* SymbolView.swift */,
 				FCA8E9F92B6995B500043B61 /* SymbolViewCell.swift */,
+				FCBC060F2B6C36220056E327 /* PickerView.swift */,
+				FCBC06132B6C5E020056E327 /* MarketView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -242,9 +251,11 @@
 				FCA8E9B92B68088800043B61 /* CompanyNews.swift in Sources */,
 				FCA8E9C12B6808F900043B61 /* NetworkManager.swift in Sources */,
 				FCA8E9B72B68087E00043B61 /* CompanyProfile.swift in Sources */,
+				FCBC06102B6C36220056E327 /* PickerView.swift in Sources */,
 				FCA8E99B2B6807A700043B61 /* AppDelegate.swift in Sources */,
 				FCA8E9C32B68090600043B61 /* SocketService.swift in Sources */,
 				FCA8E9C52B68090E00043B61 /* WebService.swift in Sources */,
+				FCBC06142B6C5E020056E327 /* MarketView.swift in Sources */,
 				FCA8E9C92B68582700043B61 /* Constants.swift in Sources */,
 				FCBC060E2B6C07EC0056E327 /* StreamingViewController.swift in Sources */,
 				FCA8E9BD2B6808A700043B61 /* Recommendation.swift in Sources */,
@@ -254,6 +265,7 @@
 				FCA8E9F82B69955B00043B61 /* SymbolView.swift in Sources */,
 				FCA8E99D2B6807A700043B61 /* SceneDelegate.swift in Sources */,
 				FCA8E9CD2B685AB600043B61 /* SymbolDetailViewModel.swift in Sources */,
+				FCBC06122B6C5DB00056E327 /* MarketViewController.swift in Sources */,
 				FCA8E9CF2B685AE600043B61 /* SymbolViewController.swift in Sources */,
 				FCA8E9D12B685AFE00043B61 /* SymbolDetailsViewController.swift in Sources */,
 				FCA8E9BF2B6808BD00043B61 /* Exchange.swift in Sources */,
