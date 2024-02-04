@@ -17,12 +17,28 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window.rootViewController = createTabBar()
         window.makeKeyAndVisible()
         self.window = window
+        
+
     }
     
     func createTabBar() -> UINavigationController{
         let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [SymbolViewController(), SymbolDetailsViewController(), StreamingViewController(), MarketViewController()]
+        let SVC = SymbolViewController()
+        let SDC = SymbolDetailsViewController()
+        let StrVC = StreamingViewController()
+        let MVC = MarketViewController()
+        tabBarController.viewControllers = [SVC, SDC, StrVC, MVC]
         let navController = UINavigationController(rootViewController: tabBarController)
+        
+        var customTabBarItem1 = UITabBarItem(title: "Quote", image: nil, selectedImage: nil)
+        SVC.tabBarItem = customTabBarItem1
+        let customTabBarItem2 = UITabBarItem(title: "Symbol Details", image: nil, selectedImage: nil)
+        SDC.tabBarItem = customTabBarItem2
+        let customTabBarItem3 = UITabBarItem(title: "Streaming Quotes", image: nil, selectedImage: nil)
+        StrVC.tabBarItem = customTabBarItem3
+        let customTabBarItem4 = UITabBarItem(title: "Market", image: nil, selectedImage: nil)
+        MVC.tabBarItem = customTabBarItem4
+
         return navController
     }
 

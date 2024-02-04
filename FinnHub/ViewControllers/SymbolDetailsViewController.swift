@@ -20,8 +20,6 @@ class SymbolDetailsViewController: UIViewController {
         view.backgroundColor = .systemBackground
         title = "Symbol Details"
 
-        let customTabBarItem = UITabBarItem(title: "Symbol Details", image: nil, selectedImage: nil)
-        self.tabBarItem = customTabBarItem
 
     }
 

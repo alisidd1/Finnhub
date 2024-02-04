@@ -15,8 +15,6 @@ class StreamingViewController: UIViewController {
 
         title = "Streaming Data"
 
-        let customTabBarItem = UITabBarItem(title: "Streaming Data", image: nil, selectedImage: nil)
-        self.tabBarItem = customTabBarItem
-
+ 
     }
 }

@@ -21,9 +21,7 @@ class SymbolViewController: UIViewController {
         view.backgroundColor = .systemBackground
         title = "Stock Data"
         
-        var customTabBarItem:UITabBarItem = UITabBarItem(title: "Quote", image: nil, selectedImage: nil)
-        self.tabBarItem = customTabBarItem
-        
+          
     }
     
 
