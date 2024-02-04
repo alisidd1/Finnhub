@@ -1,14 +1,13 @@
 //
-//  SymbolView.swift
+//  SymbolDetailView.swift
 //  FinnHub
 //
-//  Created by Ali Siddiqui on 1/30/24.
+//  Created by Ali Siddiqui on 2/2/24.
 //
 
 import UIKit
 
-class SymbolView: UIView, UITableViewDelegate, UITableViewDataSource {
-      
+class SymbolDetailView: UIView, UITableViewDelegate, UITableViewDataSource {
     var symbolData = StockAPIResponse(close: 0.0,
                                       dailyGain: 0.0,
                                       dailyPercent: 0.0,
@@ -41,7 +40,7 @@ class SymbolView: UIView, UITableViewDelegate, UITableViewDataSource {
         let headerImageView = UIImageView()
         headerImageView.translatesAutoresizingMaskIntoConstraints = false
         headerImageView.backgroundColor = .systemPink
-        headerImageView.image = UIImage(named: "image")
+        headerImageView.image = UIImage(named: "detailImage")
         return headerImageView
     }()
     
@@ -170,11 +169,5 @@ class SymbolView: UIView, UITableViewDelegate, UITableViewDataSource {
             self.stockTable.isHidden = false
             stockTable.reloadData()
         }
-    }
-    
-    func deleteBackward() {
-    //    super.deleteBackward()
-        print("Backspace");
-        self.endEditing(true);
     }
 }

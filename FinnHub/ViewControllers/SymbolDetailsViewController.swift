@@ -8,7 +8,7 @@
 import UIKit
 
 class SymbolDetailsViewController: UIViewController {
-    private let _view = SymbolView()
+    private let _view = SymbolDetailView()
 
     override func loadView() {
         super.loadView()
@@ -18,10 +18,10 @@ class SymbolDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        title = "Details Data"
+        title = "Symbol Details"
 
- //       let customTabBarItem:UITabBarItem = UITabBarItem(title: "Streaming Data", image: nil, selectedImage: nil)
-//        self.tabBarItem = customTabBarItem
+        let customTabBarItem = UITabBarItem(title: "Symbol Details", image: nil, selectedImage: nil)
+        self.tabBarItem = customTabBarItem
 
     }
 

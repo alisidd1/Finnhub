@@ -28,6 +28,10 @@ class MarketViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         button.setTitle("Click ME", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        
+        let customTabBarItem = UITabBarItem(title: "Market Data", image: nil, selectedImage: nil)
+        self.tabBarItem = customTabBarItem
+
 
 //        let vc = UIWindow.getVisibleViewControllerFrom(vc: self)
         

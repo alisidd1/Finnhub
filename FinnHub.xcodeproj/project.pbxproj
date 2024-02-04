@@ -33,6 +33,7 @@
 		FCBC06102B6C36220056E327 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBC060F2B6C36220056E327 /* PickerView.swift */; };
 		FCBC06122B6C5DB00056E327 /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBC06112B6C5DB00056E327 /* MarketViewController.swift */; };
 		FCBC06142B6C5E020056E327 /* MarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBC06132B6C5E020056E327 /* MarketView.swift */; };
+		FCBC06162B6D40D50056E327 /* SymbolDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBC06152B6D40D50056E327 /* SymbolDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		FCBC060F2B6C36220056E327 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		FCBC06112B6C5DB00056E327 /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
 		FCBC06132B6C5E020056E327 /* MarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketView.swift; sourceTree = "<group>"; };
+		FCBC06152B6D40D50056E327 /* SymbolDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				FCA8E9F72B69955B00043B61 /* SymbolView.swift */,
+				FCBC06152B6D40D50056E327 /* SymbolDetailView.swift */,
 				FCA8E9F92B6995B500043B61 /* SymbolViewCell.swift */,
 				FCBC060F2B6C36220056E327 /* PickerView.swift */,
 				FCBC06132B6C5E020056E327 /* MarketView.swift */,
@@ -259,6 +262,7 @@
 				FCA8E9C92B68582700043B61 /* Constants.swift in Sources */,
 				FCBC060E2B6C07EC0056E327 /* StreamingViewController.swift in Sources */,
 				FCA8E9BD2B6808A700043B61 /* Recommendation.swift in Sources */,
+				FCBC06162B6D40D50056E327 /* SymbolDetailView.swift in Sources */,
 				FCA8E9A52B6807A700043B61 /* FinnHub.xcdatamodeld in Sources */,
 				FCA8E9FA2B6995B500043B61 /* SymbolViewCell.swift in Sources */,
 				FCA8E9BB2B68089800043B61 /* PriceTarget.swift in Sources */,

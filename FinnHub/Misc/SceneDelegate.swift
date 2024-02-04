@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     func createTabBar() -> UINavigationController{
         let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [SymbolViewController(), StreamingViewController(), MarketViewController(), SymbolDetailsViewController()]
+        tabBarController.viewControllers = [SymbolViewController(), SymbolDetailsViewController(), StreamingViewController(), MarketViewController()]
         let navController = UINavigationController(rootViewController: tabBarController)
         return navController
     }
