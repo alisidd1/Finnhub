@@ -7,8 +7,6 @@
 
 import UIKit
 
-import UIKit
-
 class NetworkManager {
     static let shared = NetworkManager()
     
@@ -19,7 +17,6 @@ class NetworkManager {
     
     
     func getStockQuote(symbol: String, completion: @escaping(Result<StockAPIResponse, CustomErrors>) -> Void) {
-  //      let endP = baseURL + "quote?symbol=" + stockSymbol + "&token=" + apiKey
         let endP = baseURL + "quote?symbol=" + symbol + "&token=" + apiKey
         guard let url = URL(string: endP) else {
             completion(.failure(.invalidUrl))
@@ -46,7 +43,7 @@ class NetworkManager {
             do {
                 let decoder = JSONDecoder()
                 let apiRsponse = try decoder.decode(StockAPIResponse.self , from: data)
-//                print(apiRsponse as Any)
+                print(apiRsponse as Any)
                 completion(.success(apiRsponse))
             } catch DecodingError.dataCorrupted(let context) {
                 print(context)
@@ -56,6 +53,8 @@ class NetworkManager {
             } catch DecodingError.valueNotFound(let value, let context) {
                 print("Value '\(value)' not found:", context.debugDescription)
                 print("codingPath:", context.codingPath)
+                completion(.failure(.nullValue))
+                return
             } catch DecodingError.typeMismatch(let type, let context) {
                 print("Type '\(type)' mismatch:", context.debugDescription)
                 print("codingPath:", context.codingPath)

@@ -12,4 +12,5 @@ enum CustomErrors: String, Error {
     case unableToComplete =  "Unable to complete the request. Please check your network connection"
     case invalidResponse = "Invalid response from the server. Please try again later."
     case invalidData = "The data received from the server was invalid. Please try again later"
+    case nullValue = "For symbol data null value found"
 }

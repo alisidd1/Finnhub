@@ -7,8 +7,13 @@
 
 import UIKit
 
+protocol  SymbolViewDelegate: AnyObject {
+    func NetworkCallReturnedInvalidresponse()
+}
+
 class SymbolView: UIView, UITableViewDelegate, UITableViewDataSource {
-      
+    weak var delegate: SymbolViewDelegate?
+    
     var symbolData = StockAPIResponse(close: 0.0,
                                       dailyGain: 0.0,
                                       dailyPercent: 0.0,
@@ -150,7 +155,10 @@ class SymbolView: UIView, UITableViewDelegate, UITableViewDataSource {
             switch result {
             case .failure(let error):
                 print("Error: \(error)")
-                return
+                DispatchQueue.main.async {
+                    self?.delegate?.NetworkCallReturnedInvalidresponse()
+                    return
+                }
             case .success(let data):
                 self?.symbolData = data
                 DispatchQueue.main.async {
@@ -178,3 +186,4 @@ class SymbolView: UIView, UITableViewDelegate, UITableViewDataSource {
         self.endEditing(true);
     }
 }
+

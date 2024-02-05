@@ -7,7 +7,8 @@
 
 import UIKit
 
-class SymbolViewController: UIViewController {
+class SymbolViewController: UIViewController, SymbolViewDelegate {
+    
     
     private let _view = SymbolView()
 
@@ -20,10 +21,14 @@ class SymbolViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         title = "Stock Data"
-        
-          
+        _view.delegate = self
+
     }
     
-
+    func NetworkCallReturnedInvalidresponse() {
+        let alert = UIAlertController(title: "Invalid Symbol", message: "System Error", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+            present(alert, animated: true)
+    }
 }
 
