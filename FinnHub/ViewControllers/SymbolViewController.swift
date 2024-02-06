@@ -9,7 +9,6 @@ import UIKit
 
 class SymbolViewController: UIViewController, SymbolViewDelegate {
     
-    
     private let _view = SymbolView()
 
     override func loadView() {
@@ -26,7 +25,7 @@ class SymbolViewController: UIViewController, SymbolViewDelegate {
     }
     
     func NetworkCallReturnedInvalidresponse() {
-        let alert = UIAlertController(title: "Invalid Symbol", message: "System Error", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Invalid Symbol", message: "", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
             present(alert, animated: true)
     }

@@ -23,7 +23,6 @@ class SymbolView: UIView, UITableViewDelegate, UITableViewDataSource {
                                       pervClose: 0.0,
                                       totalVolume: 0.0)
     
-    
     override init(frame: CGRect)
     {
         super.init(frame: frame)
@@ -146,8 +145,10 @@ class SymbolView: UIView, UITableViewDelegate, UITableViewDataSource {
     
     @objc func symbolHander() {
         if stockSymbolLabel.text?.isEmpty == true && symbolData.close != 0.0 &&
-                        stockSymbolLabel.text?.isAlphanumeric != nil{
+                        stockSymbolLabel.text?.isAlpha != nil{
             symbolData.close = 0.0
+            stockSymbolLabel.text = ""
+            stockSymbolTextFiled.text = ""
             stockTable.reloadData()
             return
         }
@@ -158,6 +159,10 @@ class SymbolView: UIView, UITableViewDelegate, UITableViewDataSource {
                 print("Error: \(error)")
                 DispatchQueue.main.async {
                     self?.delegate?.NetworkCallReturnedInvalidresponse()
+                    self?.stockSymbolLabel.text = ""
+                    self?.stockSymbolTextFiled.text = ""
+                    self?.symbolData.close = 0.0
+                    self?.stockTable.reloadData()
                     return
                 }
             case .success(let data):
@@ -166,7 +171,6 @@ class SymbolView: UIView, UITableViewDelegate, UITableViewDataSource {
                     self?.stockTable.reloadData()
                 }
             }
-            
         }
     }
     
@@ -189,7 +193,7 @@ class SymbolView: UIView, UITableViewDelegate, UITableViewDataSource {
 }
 
 extension String {
-    var isAlphanumeric: Bool {
+    var isAlpha: Bool {
         allSatisfy { ($0.isLetter) && $0.isASCII }
     }
 }
