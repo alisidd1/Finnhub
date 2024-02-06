@@ -145,7 +145,8 @@ class SymbolView: UIView, UITableViewDelegate, UITableViewDataSource {
     }
     
     @objc func symbolHander() {
-        if stockSymbolLabel.text?.isEmpty == true && symbolData.close != 0.0 {
+        if stockSymbolLabel.text?.isEmpty == true && symbolData.close != 0.0 &&
+                        stockSymbolLabel.text?.isAlphanumeric != nil{
             symbolData.close = 0.0
             stockTable.reloadData()
             return
@@ -187,3 +188,8 @@ class SymbolView: UIView, UITableViewDelegate, UITableViewDataSource {
     }
 }
 
+extension String {
+    var isAlphanumeric: Bool {
+        allSatisfy { ($0.isLetter) && $0.isASCII }
+    }
+}

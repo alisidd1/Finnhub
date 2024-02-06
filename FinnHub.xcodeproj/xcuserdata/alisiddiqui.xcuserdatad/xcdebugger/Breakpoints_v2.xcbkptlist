@@ -39,54 +39,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A1D2B3D8-490D-4BF3-BA6C-309FC32F6240"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FinnHub/Views/SymbolView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "185"
-            endingLineNumber = "185"
-            landmarkName = "deleteBackward()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "A1D2B3D8-490D-4BF3-BA6C-309FC32F6240 - a62e8936db7b067e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "FinnHub.SymbolView.deleteBackward() -&gt; ()"
-                  moduleName = "FinnHub"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alisiddiqui/Desktop/projects/FinnHub/FinnHub/Views/SymbolView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "185"
-                  endingLineNumber = "185"
-                  offsetFromSymbolStart = "220">
-               </Location>
-               <Location
-                  uuid = "A1D2B3D8-490D-4BF3-BA6C-309FC32F6240 - a62e8936db7b067e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "FinnHub.SymbolView.deleteBackward() -&gt; ()"
-                  moduleName = "FinnHub"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alisiddiqui/Desktop/projects/FinnHub/FinnHub/Views/SymbolView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "185"
-                  endingLineNumber = "185"
-                  offsetFromSymbolStart = "84">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "C6218188-A642-4192-B313-480710AE8D07"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
