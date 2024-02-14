@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func createTabBar() -> UINavigationController{
         let tabBarController = UITabBarController()
         let SVC = SymbolViewController()
-        let SDC = SymbolDetailsViewController()
+        let SDC = SymbolDetailViewController()
         let StrVC = StreamingViewController()
         let MVC = MarketViewController()
         tabBarController.viewControllers = [SVC, SDC, StrVC, MVC]
