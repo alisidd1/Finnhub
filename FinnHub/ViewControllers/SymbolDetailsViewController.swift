@@ -74,7 +74,7 @@ class SymbolDetailViewController: UIViewController, URLSessionWebSocketDelegate 
                  case .data(_):
                      print(message)
                  case .string(let str):
-                     print(str)
+   //                  print(str)
                      let jsonData = Data(str.utf8)
                      do {
                          let decoder = JSONDecoder()
@@ -87,7 +87,7 @@ class SymbolDetailViewController: UIViewController, URLSessionWebSocketDelegate 
                                 t: result.data[0].t,
                                 v: result.data[0].v)
                              )
-                             print(tickerPrice)
+    //                         print(tickerPrice)
                              self?._view.symbolDetailData = tickerPrice
                              self?._view.stockTable.reloadData()
                          }

@@ -37,18 +37,3 @@ extension SymbolDetailViewModel {
 }
 
 
-/*
-struct SymbolDetailViewModel: Codable {
-    var symbol: String
-    var lastPrice: Double
-    var timeStamp: Double
-    var volume: Double
-    
-    enum CodingKeys: String, CodingKey {
-        case symbol = "s"
-        case lastPrice = "p"
-        case timeStamp = "t"
-        case volume = "v"
-    }
-}
-*/

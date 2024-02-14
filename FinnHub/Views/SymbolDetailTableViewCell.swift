@@ -90,14 +90,14 @@ class SymbolDetailTableViewCell: UITableViewCell {
     }
     
     func configure(symbolData: SymbolDetailViewModel) {
-        print("\n****** \(symbolData)")
+//        print("\n****** \(symbolData)")
         if symbolData.data.isEmpty {
             symbolLabel.text = "Symbol:  GOOG"
             lastPriceLabel.text      = "Last Price:  0.0"
             unixTimestampLabel.text  = "Timestamp:  0.0"
             volumeLabel.text = "Volume:  0.0"
         } else {
-            print("\n****** \(symbolData.data[0])")
+  //          print("\n****** \(symbolData.data[0])")
             
             symbolLabel.text         = "Symbol:  GOOG"
             lastPriceLabel.text      = "Last Price:  \(symbolData.data[0].p)"
