@@ -88,6 +88,7 @@ class SymbolDetailViewController: UIViewController, URLSessionWebSocketDelegate 
                                 v: result.data[0].v)
                              )
                              print(tickerPrice)
+                             self?._view.symbolDetailData = tickerPrice
                              self?._view.stockTable.reloadData()
                          }
                      } catch  {

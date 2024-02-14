@@ -9,13 +9,7 @@ import UIKit
 
 class SymbolDetailView: UIView, UITableViewDelegate, UITableViewDataSource {
     var symbolDetailData = SymbolDetailViewModel(data: [Trade](), type: "")
-        
-        /*symbol: "",
-                                                 lastPrice: 0.0,
-                                                 timeStamp: 0.0,
-                                                 volume: 0.0)
-         */
-        
+                
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubview(headerImageView)
