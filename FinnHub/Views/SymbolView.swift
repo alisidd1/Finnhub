@@ -34,7 +34,7 @@ class SymbolView: UIView, UITableViewDelegate, UITableViewDataSource {
         layoutConstraints()
         stockTable.delegate = self
         stockTable.dataSource = self
-        enterButton.addTarget(self, action: #selector(symbolHander), for: .touchUpInside)
+        enterButton.addTarget(self, action: #selector(symbolHandler), for: .touchUpInside)
     }
     
     required init?(coder: NSCoder) {
@@ -143,7 +143,7 @@ class SymbolView: UIView, UITableViewDelegate, UITableViewDataSource {
         return 100
     }
     
-    @objc func symbolHander() {
+    @objc func symbolHandler() {
         if stockSymbolLabel.text?.isEmpty == true && symbolData.close != 0.0 &&
                         stockSymbolLabel.text?.isAlpha != nil{
             symbolData.close = 0.0
